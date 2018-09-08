@@ -1,0 +1,12 @@
+{% extends 'paa/base.html' %}
+<!--base.htmlの内容を引き継ぐ-->
+{% block title %}トップページ{% endblock %}
+
+{% block content %}
+<!--blockcontentを再度書くことで上書きができる-->
+<h1>indexページだよ,{{ name }}</h1>
+
+{% include 'paa/base.html' %}
+<!--他のテンプレートを読み込むタグ。テンプレートの内容が大きくなったり共通で使う部分があれば使用する。イメージとしては関数-->
+
+{% endblock %}
